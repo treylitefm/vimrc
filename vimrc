@@ -12,6 +12,7 @@ filetype plugin indent on
 " Settings
 
 set number
+set expandtab
 set tabstop=4
 set shiftwidth=4
 set diffopt=vertical
