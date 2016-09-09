@@ -2,10 +2,10 @@
  set rtp+=~/.vim/bundle/vundle/
  call vundle#rc()
 
-" Bundles
+" Plugins 
 
-Bundle 'gmarik/vundle'
-Bundle 'altercation/vim-colors-solarized'
+Plugin 'gmarik/vundle'
+Plugin 'altercation/vim-colors-solarized'
 
 filetype plugin indent on 
 
@@ -23,12 +23,14 @@ set ruler
 set showmatch
 syntax enable
 set background=dark
-let g:solarized_termcolors = 256
-colorscheme solarized
 
 set nocompatible
 set cursorline
 set cursorcolumn
+
+set backspace=indent,eol,start
+
+noremap % v% "when using % to jump to matching ([{, select all text in between
 
 " If pasting from clipboard is weird, compile with +clipboard (on OS X re-install vim with homebrew)
 " do "*p for normal bulk pasting
