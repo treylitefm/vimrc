@@ -29,3 +29,6 @@ colorscheme solarized
 set nocompatible
 set cursorline
 set cursorcolumn
+
+" If pasting from clipboard is weird, compile with +clipboard (on OS X re-install vim with homebrew)
+" do "*p for normal bulk pasting
