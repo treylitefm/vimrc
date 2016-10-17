@@ -1,6 +1,6 @@
  filetype off    
- set rtp+=~/.vim/bundle/vundle/
- call vundle#rc()
+ set rtp+=~/.vim/bundle/Vundle.vim/
+ call vundle#begin()
 
 " Plugins 
 
@@ -40,7 +40,10 @@ noremap % v% "when using % to jump to matching ([{, select all text in between
 noremap <C-p> "*p
 
 " If pasting from clipboard is weird, compile with +clipboard (on OS X re-install vim with homebrew)
-" do "*p for normal bulk pasting
-"
+" do "*p for normal bulk pasting; OSX only solution
+" udpate: turns out set paste option fixes copy/paste...afaik
+nnoremap <C-A-P> :set invpaste paste?<CR>
+set pastetoggle=<C-A-P>
+set showmode
 
 au BufNewFile,BufRead *.ejs set filetype=html
