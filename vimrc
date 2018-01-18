@@ -14,8 +14,8 @@ filetype plugin indent on
 
 set number
 set expandtab
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 " set mouse=a
 set diffopt=vertical
 set ignorecase
@@ -30,6 +30,7 @@ set cursorline
 set cursorcolumn
 
 set backspace=indent,eol,start
+set noeol
 
 set clipboard=unnamed
 
